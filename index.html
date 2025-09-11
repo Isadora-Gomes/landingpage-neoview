@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Arabic:wght@100..900&family=Noto+Serif+Old+Uyghur&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>NeoView - Transformando caminhos em inclusão</title>
+</head>
+<header id="header">
+    <nav>
+        <div id="paginas">
+
+            <a href="/" id="box-img">
+                <img src="/img/logo.png" alt="logo">
+                <p>PORTAL <br> ESSÊNCIA AZUL</p>
+            </a>
+
+            <ul id="nav1">
+                <li><a class="item-nav" href="/">Início</a></li>
+                <li><a class="item-nav" href="/eventos">Eventos</a></li>
+                <li><a class="item-nav" href="/catalogo">Catálogo</a></li>
+                <li><a class="item-nav" href="/documentos">Documentos</a></li>
+                <li><a class="item-nav" href="/voluntarios">Voluntários</a></li>
+                <li><a class="item-nav" href="/conscientizacao">Conscientização</a></li>
+                <li><a class="item-nav" href="/contato">Contato</a></li>
+            </ul>
+
+            <div id="formulario">
+                <a href="/formulario"><button>Faça parte!</button></a>
+            </div>
+
+            <div class="nuvem-info" id="id-nuvem">
+                <h2 class="nuvem-info-titulo">Solicitar cadastro</h2>
+                <p class="nuvem-info-texto">
+                    Preencha um breve formulário para conseguirmos oferecer um
+                    suporte personalizado e mais eficaz às pessoas acolhidas
+                    pela Essência Azul. Suas informações serão tratadas com
+                    cuidado e confidencialidade.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Nav responsiva -->
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox" id="botao">
+            <i id="abrir-menu" class="fa-solid fa-bars"></i>
+            <i id="fechar-menu" class="fa-solid fa-x"></i>
+        </label>
+    </nav>
+</header>
+
+<ul id="nav2">
+    <li><a class="item-nav2" href="/">Início</a></li>
+    <li><a class="item-nav2" href="/eventos">Eventos</a></li>
+    <li><a class="item-nav2" href="/catalogo">Catálogo</a></li>
+    <li><a class="item-nav2" href="/documentos">Documentos</a></li>
+    <li><a class="item-nav2" href="/voluntarios">Voluntários</a></li>
+    <li><a class="item-nav2" href="/conscientizacao">Conscientização</a></li>
+    <li><a class="item-nav2" href="/contato">Contato</a></li>
+    <li id="li-form"><a class="item-nav2" id="formulario-nav2">Faça parte!
+            <i id="chevron-down" class="fa-solid fa-chevron-down"></i>
+        </a></li>
+    <li id="li-form-aberto">
+        <h2 class="titulo-form-aberto">Solicitar cadastro</h2>
+        <p class="p-form-aberto">
+            Preencha um breve formulário para conseguirmos oferecer um
+            suporte personalizado e mais eficaz às pessoas acolhidas
+            pela Essência Azul. Suas informações serão tratadas com
+            cuidado e confidencialidade.
+        </p>
+        <a href="/formulario"><button class="resp-form-nav2">Responder formulário</button></a>
+    </li>
+</ul>
+
+<script>
+    const formularioLi = document.getElementById('li-form');
+    const formularioLiAberto = document.getElementById('li-form-aberto');
+
+    formularioLi.addEventListener('click', () => {
+        formularioLiAberto.classList.toggle('hovered');
+    });
+
+    const chevronDown = document.getElementById('chevron-down');
+
+    formularioLi.addEventListener('click', () => {
+        chevronDown.classList.toggle('girar');
+    });
+
+    const abrirMenu = document.getElementById('abrir-menu');
+    const fecharMenu = document.getElementById('fechar-menu');
+    const menu = document.getElementById('botao');
+    const nav2 = document.getElementById('nav2');
+
+    menu.addEventListener('click', () => {
+        fecharMenu.classList.toggle('mostrar');
+        abrirMenu.classList.toggle('esconder');
+        nav2.classList.toggle('mostrar-menu');
+    });
+</script>
+<body>
+</body>
+</html>
