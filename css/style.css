@@ -1,6 +1,7 @@
    * {
        margin: 0;
        padding: 0;
+       font-family: 'Poppins';
    }
 
    #abrir-menu {
@@ -62,7 +63,7 @@
    #nav1 {
        display: flex;
        justify-content: space-evenly;
-       width: 70%;
+       width: 55%;
    }
 
    #formulario {
@@ -146,7 +147,6 @@
        text-decoration: none;
        font-size: 17px;
        font-weight: bold;
-       font-family: 'Plus Jakarta Sans', sans-serif;
        text-transform: uppercase;
        cursor: pointer;
        height: 30px;
@@ -341,6 +341,109 @@
        color: white !important;
        font-weight: 600 !important;
    }
+
+   /* fim nav  */
+
+   #div1 {
+       display: flex;
+       background-color: white;
+       border-radius: 4px;
+       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+       max-width: 100%;
+   }
+
+   .text-section {
+       padding: 10px 50px;
+       background-color: #fff;
+       width: 89%;
+   }
+
+   .text-section h2 {
+       line-height: 90px;
+       margin-top: 120px;
+       font-size: 70px;
+       color: #1535B5;
+       font-weight: 700;
+   }
+
+   .text-section p {
+       margin-top: 37px;
+       font-size: 26px;
+       text-align: justify;
+       color: #4B4B4B;
+   }
+
+   .image-section {
+       width: 50%;
+   }
+
+   .image-section img {
+       width: 567px;
+       height: 633px;
+       margin: 30px 80px 0 80px;
+   }
+
+   #btn-section1 {
+       padding: 18px ;
+       background-color: #1535B5;
+       border-radius: 20px;
+       margin: 50px;
+       width: 33%;
+       font-weight: 500;
+   }
+
+   #btn-section1 a {
+       font-size: 24px;
+       text-decoration: none;
+       color: #fff;
+   }
+
+   #section2{
+    background-color: #C5D1FF;
+   }
+
+   #section2 #texto2{
+       width: 50%;
+       padding: 40px;
+   }
+    #title-sec2 h2{
+        font-size: 57px;
+        line-height: 80px;
+    }
+
+    #text-sec2{
+        margin-top: 30px;
+        font-size: 24px;
+        color: #4B4B4B;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
 
    @media (max-width: 768px) {
        #nav1 {
