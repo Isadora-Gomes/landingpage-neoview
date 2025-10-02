@@ -645,30 +645,60 @@
        color: #fff;
    }
 
+   #wave {
+       position: relative;
+   }
+
    #wave img {
        margin: 0;
        object-fit: cover;
+       position: absolute;
+       bottom: 0;
+       width: 100%;
+       z-index: 10;
+
    }
 
    /* footer  */
 
    #footer {
-       background-color: #1535B5;
+       background-color: #1D34AD;
        color: white;
        display: flex;
        z-index: 2;
    }
+ #download{
+margin-left: 100px;
+   }
+  
+
    #cima {
-    display: flex;
+       position: absolute;
+       top: 3050px;
+       left: 100px;
+       z-index: 15;
    }
 
-   #cima img{
-    width: 70px;
-    height: 66px;
+   #cima #neoview-cima {
+       display: flex;
+       align-items: center;
+       margin-left: 50px;
    }
 
-   #cima h3{
-    text-align: center;
+   #cima img {
+       width: 70px;
+       height: 66px;
+   }
+
+   #cima h3 {
+       text-align: center;
+       color: white;
+       font-size: 30px;
+   }
+
+   #cima p {
+       color: white;
+       font-size: 20px;
    }
 
    #info {
@@ -678,9 +708,10 @@
        margin-bottom: 0px;
    }
 
-   #baixo img{
-    width: 150px;
+   #download img {
+       width: 150px;
    }
+
    #footer h1 {
        font-size: 27px;
        margin-bottom: 10px;
