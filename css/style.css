@@ -432,12 +432,12 @@
        color: #4B4B4B;
    }
 
-   #image-section2 {
+   .image-section2 {
        width: 50%;
        margin-top: 150px;
    }
 
-   #image-section2 img {
+   .image-section2 img {
        width: 470px;
        height: 100%;
        object-fit: cover;
@@ -810,30 +810,292 @@
    }
 
 
+@media (max-width: 1024px) {
+  #div1 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-section {
+    padding: 40px;
+    width: 100%;
+  }
+
+  .text-section h2 {
+    font-size: 55px;
+    line-height: 70px;
+    margin-top: 60px;
+  }
+
+  .image-section {
+    width: 100%;
+  }
+
+  .image-section img {
+    width: 80%;
+    margin: 40px auto;
+    display: block;
+  }
+
+  #section2 {
+    height: auto;
+  }
+
+  #div2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  
+
+  #section2 #texto2,
+  .image-section2 {
+    width: 90%;
+    margin: 0;
+  }
+
+  .image-section2 img {
+    width: 70%;
+  }
+}
 
 
+@media (max-width: 768px) {
+  #div1 {
+    flex-direction: column;
+  }
 
 
+  .text-section p {
+    font-size: 18px;
+  }
+
+  #btn-section1 {
+    margin: 30px auto;
+    width: 12em;
+  }
+
+  #section2 {
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  #title-sec2 h2 {
+    font-size: 40px;
+    line-height: 55px;
+  }
+
+  #text-sec2 {
+    font-size: 18px;
+  }
+
+  #cards {
+    text-align: center;
+  }
+
+  #section3 #pt1 h2 {
+    font-size: 32px;
+  }
+
+  #section3 #pt1 p {
+    font-size: 18px;
+  }
+
+  #topico{
+    flex-direction: column;
+  }
+
+  #section3 #pt2 {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  #section3 #pt2 #texto-sec3 {
+    width: 90%;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+#section3 #pt2 #texto-sec3 p{
+      font-size: 16px;
+  }
+
+  #btn-section3{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #section4 {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  #div4 {
+    padding: 30px 40px;
+  }
+
+  #div4 h2 {
+    font-size: 35px;
+  }
+
+  #div4 p {
+    font-size: 18px;
+  }
+
+  #footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+#img-sec3, #wave, #cima, .image-section{
+    display: none;
+  }
+
+  #info {
+    flex-direction: column;
+    gap: 40px;
+    margin: 20px 0;
+  }
+
+  #download img {
+    width: 160px;
+  }
+
+  #redes-contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  #section4 #btn-section4{
+    width: 21em;
+    padding: 12px;
+  }
+
+  #section4 #btn-section4 a{
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-section {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .text-section h2 {
+    font-size: 30px;
+    line-height: 45px;
+    margin-top: 20px;
+  }
+
+  .text-section p {
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  #btn-section1 {
+    width: 100%;
+    max-width: 260px;
+    font-size: 16px;
+  }
+
+  .image-section2 img,
+  #img-sec3 img {
+    width: 100%;
+  }
+
+  #section2 #texto2{
+    padding: 0;
+  }
+
+  #section3 #topico{
+    flex-direction: column;
+    padding: 0;
+  }
+
+  #section3 #topico #barra{
+    display: none;
+  }
+
+  #title-sec2 h2 {
+    font-size: 32px;
+  }
+
+  #section3 #div3 h2{
+    padding: 70px 10px 10px 10px
+  }
+
+  #section3 #pt1 h2 {
+    font-size: 28px;
+  }
+
+  #section3 #pt2 h2 {
+    font-size: 30px;
+  }
+
+  #div4 {
+    padding: 20px;
+  }
+
+  #div4 h2 {
+    font-size: 28px;
+  }
+
+  #div4 p {
+    font-size: 16px;
+  }
+
+  #footer {
+    font-size: 0.9rem;
+    padding: 40px 30px;
+  }
+}
 
 
+@media (max-width: 360px) {
+  body {
+    overflow-x: hidden;
+  }
 
+  .text-section h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
 
+  .text-section p {
+    font-size: 15px;
+  }
 
+  #btn-section1 {
+    width: 90%;
+    font-size: 15px;
+  }
 
+  #section3 #pt1 h2,
+  #section3 #pt2 h2 {
+    font-size: 25px;
+  }
 
+  #div4 h2 {
+    font-size: 25px;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-   @media (max-width: 768px) {
+  #footer h1,
+  #footer h2,
+  #footer h4,
+  #footer h5 {
+    font-size: 15px;
+  }
+}
+ @media (max-width: 768px) {
        #nav1 {
            display: none;
        }
@@ -876,4 +1138,4 @@
            display: block;
            float: right;
        }
-   }
+   } 
