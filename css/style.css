@@ -867,6 +867,11 @@
     flex-direction: column;
   }
 
+#nav2 li a{
+    padding-left: 30px;
+    padding-top: 15px;
+}
+
 
   .text-section p {
     font-size: 18px;
@@ -1137,5 +1142,15 @@
        #botao {
            display: block;
            float: right;
+       }
+
+       #li-form button{
+        background-color: #1535B5;
+        color: #fff;
+        font-size: 16px;
+        border-radius: 8px;
+        border: none;
+        font-weight: 600;
+        padding: 7px;
        }
    } 
